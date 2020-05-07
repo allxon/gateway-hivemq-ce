@@ -15,12 +15,12 @@
                     <protocol>TLSv1.2</protocol>
                 </protocols>
                 <keystore>
-                    <path>/opt/hivemq/conf/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                     <private-key-password>hivemq</private-key-password>
                 </keystore>
                 <truststore>
-                    <path>/opt/hivemq/conf/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                 </truststore>
                 <client-authentication-mode>REQUIRED</client-authentication-mode>
@@ -52,12 +52,12 @@
                     <protocol>TLSv1.2</protocol>
                 </protocols>
                 <keystore>
-                    <path>/opt/hivemq/conf/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                     <private-key-password>hivemq</private-key-password>
                 </keystore>
                 <truststore>
-                    <path>/opt/hivemq/conf/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                 </truststore>
                 <client-authentication-mode>REQUIRED</client-authentication-mode>
