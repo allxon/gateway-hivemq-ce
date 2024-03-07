@@ -13,6 +13,7 @@
             <tls>
                 <protocols>
                     <protocol>TLSv1.2</protocol>
+                    <protocol>TLSv1.3</protocol>
                 </protocols>
                 <keystore>
                     <path>/opt/hivemq/certs/hivemq.jks</path>
@@ -23,7 +24,7 @@
                     <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                 </truststore>
-                <client-authentication-mode>REQUIRED</client-authentication-mode>
+                <client-authentication-mode>OPTIONAL</client-authentication-mode>
             </tls>
         </tls-tcp-listener>
         <websocket-listener>
@@ -50,6 +51,7 @@
             <tls>
                 <protocols>
                     <protocol>TLSv1.2</protocol>
+                    <protocol>TLSv1.3</protocol>
                 </protocols>
                 <keystore>
                     <path>/opt/hivemq/certs/hivemq.jks</path>
@@ -60,7 +62,7 @@
                     <path>/opt/hivemq/certs/hivemq.jks</path>
                     <password>hivemq</password>
                 </truststore>
-                <client-authentication-mode>REQUIRED</client-authentication-mode>
+                <client-authentication-mode>OPTIONAL</client-authentication-mode>
             </tls>
         </tls-websocket-listener>
     </listeners>
