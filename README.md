@@ -35,7 +35,7 @@ Test connect with MQTT protocol via port 8883
 
 Test connect with Websocket protocol via port 8443
 
-    docker run -v ./:/tmp --network host hivemq/mqtt-cli sub -V 3 -ws -t topic -q 1 -h hivemq.local -p 8443 -i client --cafile=/tmp/hivemq.pem --client-cert=/tmp/hivemq.pem --key=/tmp/hivemq.key -d
+    docker run -v /path/to/certs:/tmp --network host hivemq/mqtt-cli sub -V 3 -ws -ws:path="/mqtt" -t topic -q 1 -h hivemq.local -p 8443 -i client --cafile=/tmp/hivemq.pem --client-cert=/tmp/hivemq.pem --key=/tmp/hivemq.key -d
 
     Restriction request problem information was set but is unused in MQTT Version MQTT_3_1_1
     Client 'client@hivemq.local' sending CONNECT

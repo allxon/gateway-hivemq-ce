@@ -21,10 +21,10 @@
                     <private-key-password>hivemq</private-key-password>
                 </keystore>
                 <truststore>
-                    <path>/opt/hivemq/certs/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq-trust-store.jks</path>
                     <password>hivemq</password>
                 </truststore>
-                <client-authentication-mode>OPTIONAL</client-authentication-mode>
+                <client-authentication-mode>REQUIRED</client-authentication-mode>
             </tls>
         </tls-tcp-listener>
         <websocket-listener>
@@ -59,10 +59,10 @@
                     <private-key-password>hivemq</private-key-password>
                 </keystore>
                 <truststore>
-                    <path>/opt/hivemq/certs/hivemq.jks</path>
+                    <path>/opt/hivemq/certs/hivemq-trust-store.jks</path>
                     <password>hivemq</password>
                 </truststore>
-                <client-authentication-mode>OPTIONAL</client-authentication-mode>
+                <client-authentication-mode>REQUIRED</client-authentication-mode>
             </tls>
         </tls-websocket-listener>
     </listeners>
