@@ -12,7 +12,7 @@ COPY --from=extensions /extensions/hivemq-mqtt-message-log-extension /opt/hivemq
 COPY --chown=10000:10000 conf/* /opt/hivemq/conf/
 COPY --chown=10000:10000 certs/* /opt/hivemq/certs/
 
-ENV JAVA_OPTS "-XX:+UnlockExperimentalVMOptions -XX:+UseNUMA -Xmx512M -Xms512M -XX:+ExitOnOutOfMemoryError"
+ENV JAVA_OPTS "-XX:+UnlockExperimentalVMOptions -XX:+UseNUMA -XX:+ExitOnOutOfMemoryError -Xms512M -Xmx512M"
 
 VOLUME /opt/hivemq/certs
 

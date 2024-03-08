@@ -102,6 +102,6 @@
         </allow-empty-client-id>
     </security>
     <restrictions>
-        <max-connections>1000</max-connections>
+        <max-connections>1024</max-connections>
     </restrictions>
 </hivemq>
