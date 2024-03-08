@@ -24,6 +24,8 @@
                     <path>/opt/hivemq/certs/hivemq-trust-store.jks</path>
                     <password>hivemq</password>
                 </truststore>
+                <native-ssl>true</native-ssl>
+                <concurrent-handshake-limit>500</concurrent-handshake-limit>
                 <client-authentication-mode>REQUIRED</client-authentication-mode>
             </tls>
         </tls-tcp-listener>
@@ -62,6 +64,8 @@
                     <path>/opt/hivemq/certs/hivemq-trust-store.jks</path>
                     <password>hivemq</password>
                 </truststore>
+                <native-ssl>true</native-ssl>
+                <concurrent-handshake-limit>500</concurrent-handshake-limit>
                 <client-authentication-mode>REQUIRED</client-authentication-mode>
             </tls>
         </tls-websocket-listener>
